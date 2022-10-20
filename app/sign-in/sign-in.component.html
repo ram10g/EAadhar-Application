@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+        <form class="form-example card mt-5 pl-5 pt-5 pb-5" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <h1>Login</h1>
+        <div class="form-group">
+            <label for="phone_num" class="text-light">User I'd or Mobile Number:</label><br>
+            <input type="text" class="form-control phone_num" id="phone_num"placeholder="Mobile Number" name="phone_num" style="width: 20vw">
+        </div>
+        <div class="form-group">
+            <br>
+            <label for="password" class="text-light">Password:</label><br>
+            <input type="password"class="form-control password"id="password"placeholder="Password"name="password"style="width: 20vw">
+        </div>
+        <div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-customized">Login</button>
+        </div>
+        </form>
+    </div>
+  </div>
+</div>
